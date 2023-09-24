@@ -20,7 +20,7 @@ This repository contains the code of the [Angular Testing Course](https://angula
 
         `Service Unit Test Example
         
-        it("should return all courses", () => {
+            it("should return all courses", () => {
             // 1.) the method test "findAllCourses()"
             coursesService.findAllCourses().subscribe((courses) => {
 
