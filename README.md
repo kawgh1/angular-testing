@@ -21,27 +21,28 @@ This repository contains the code of the [Angular Testing Course](https://angula
             `Service Unit Test Example
             
                 it("should return all courses", () => {
-                // 1.) the method test "findAllCourses()"
-                coursesService.findAllCourses().subscribe((courses) => {
 
-                expect(courses).toBeTruthy("No courses returned");
-                expect(courses.length).toBe(12, "incorrect number of courses");
+                    // 1.) the method test "findAllCourses()"
+                    coursesService.findAllCourses().subscribe((courses) => {
 
-                const course = courses.find((course) => course.id == 12);
+                    expect(courses).toBeTruthy("No courses returned");
+                    expect(courses.length).toBe(12, "incorrect number of courses");
 
-                expect(course.titles.description).toBe("Angular Testing Course");
+                    const course = courses.find((course) => course.id == 12);
 
-                });
+                    expect(course.titles.description).toBe("Angular Testing Course");
 
-                // 2.) the HTTP request test - has to be written **after** the method we want to test
+                    });
 
-                // expect this route to be called only once
-                const request = httpTestingController.expectOne('/api/courses');
+                    // 2.) the HTTP request test - has to be written **after** the method we want to test
 
-                expect(request.request.method).toEqual("GET");
+                    // expect this route to be called only once
+                    const request = httpTestingController.expectOne('/api/courses');
 
-                // here we are providing mock data 'COURSES' to be returned by our mock HTTP request
-                request.flush({payload: Object.values(COURSES)});
+                    expect(request.request.method).toEqual("GET");
+
+                    // here we are providing mock data 'COURSES' to be returned by our mock HTTP request
+                    request.flush({payload: Object.values(COURSES)});
             });`
 
     - ### UI Components
