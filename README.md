@@ -4,8 +4,6 @@
 This repository contains the code of the [Angular Testing Course](https://angular-university.io/course/angular-testing-course).
 
 
-- ## Notes:
-
 - ## Unit Testing
     - ### Services
         - When **`Unit Testing a Service`**, we **`DO`** want to isolate that Service so that we are testing only that Service and nothing else.
@@ -15,7 +13,7 @@ This repository contains the code of the [Angular Testing Course](https://angula
 
 - ## Integration Testing
     - ### Services
-        - When **`Integration Testing a Service`**, we **`DO NOT`** want to isolate that Service so that we are testing only that Service and nothing else. **Instead**, we want to test **`real instances`** of every dependency for the service in test.
+        - When **`Integration Testing a Service`**, we **`DO NOT`** want to isolate. **Instead**, we want to test **`real instances`** of every dependency for the service in test.
         - This allows us to make sure all the Services in the test are behaving properly. We cannot do this with mock services.
     
 
