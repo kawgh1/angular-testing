@@ -18,7 +18,9 @@ This repository contains the code of the [Angular Testing Course](https://angula
         - `calculator.service.spec.ts`
         - `courses.service.spec.ts`
 
-        `it("should return all courses", () => {
+        `Service Unit Test Example
+        
+        it("should return all courses", () => {
             // 1.) the method test "findAllCourses()"
             coursesService.findAllCourses().subscribe((courses) => {
 
