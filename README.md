@@ -17,7 +17,15 @@ This repository contains the code of the [Angular Testing Course](https://angula
         - This allows us to make sure all the Services in the test are behaving properly. We cannot do this with mock services.
     
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 - #### Installation pre-requisites
 
