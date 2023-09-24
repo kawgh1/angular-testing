@@ -51,20 +51,20 @@ This repository contains the code of the [Angular Testing Course](https://angula
 
             `UI Component Test Example
             
-              it("should display the course list", () => {
+                it("should display the course list", () => {
 
-                component.courses = setupCourses(); // helper function in 'courses/common/test-utils.ts'
+                    component.courses = setupCourses(); // helper function in 'courses/common/test-utils.ts'
 
-                // trigger component change to update DOM
-                fixture.detectChanges();
+                    // trigger component change to update DOM
+                    fixture.detectChanges();
 
-                // console log the native DOM element so we can inspect it in Browser Dev Tools
-                console.log(el.nativeElement.outerHTML);
+                    // console log the native DOM element so we can inspect it in Browser Dev Tools
+                    console.log(el.nativeElement.outerHTML);
 
-                // return all DOM elements with a css class called "course-card"
-                const cardsList = el.queryAll(By.css(".course-card"));
-                expect(cardsList).toBeTruthy("could not find cards");
-                expect(cardsList.length).toBe(12, "unexpected number of courses displayed");
+                    // return all DOM elements with a css class called "course-card"
+                    const cardsList = el.queryAll(By.css(".course-card"));
+                    expect(cardsList).toBeTruthy("could not find cards");
+                    expect(cardsList.length).toBe(12, "unexpected number of courses displayed");
 
             });
             `
