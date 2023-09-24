@@ -6,15 +6,15 @@ This repository contains the code of the [Angular Testing Course](https://angula
 
 - # Notes:
 
-- # Unit Testing
-    - ## Services
+- # `Unit Testing`
+    - ## `Services`
         - When **`Unit Testing a Service`**, we **`DO`** want to isolate that Service so that we are testing only that Service and nothing else.
         - If the Service we are testing has any dependencies, like another service, then we always want to `mock` those services in our service unit test
         - This ensures that our tests are isolated and not being affected by outside influences - which is exactly what you want in a Unit Test
 
 
-- # Integration Testing
-    - ## Services
+- # `Integration Testing`
+    - ## `Services`
         - When **`Integration Testing a Service`**, we **`DO NOT`** want to isolate that Service so that we are testing only that Service and nothing else. **Instead**, we want to test **`real instances`** of every dependency for the service in test.
         - This allows us to make sure all the Services in the test are behaving properly. We cannot do this with mock services.
     
